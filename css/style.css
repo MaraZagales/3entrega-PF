@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body .presentacion .presentacion__p, body .historia__texto, body .mision__texto, body .estudio p, body p {
+  font-size: 15px;
+  line-height: 1.5; }
+
+body .productos .prod__tit, body .mision__tit {
+  margin: 10px;
+  font-size: 20px;
+  border-bottom: solid 1px #000; }
+
+.estud {
+  color: #042c21;
+  font-weight: bold;
+  font-style: italic; }
+
+.privados {
+  color: #042c21;
+  font-weight: bold;
+  font-style: italic; }
+
+.comerciales {
+  color: #042c21;
+  font-weight: bold;
+  font-style: italic; }
+
+header {
+  font-family: "Open Sans", sans-serif; }
+  header .header__logo {
+    display: none; }
+  header .header__menu {
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #000;
+    text-shadow: 2px 2px #fff;
+    font-weight: bold; }
+  header .header__boton {
+    width: 4vw; }
+
+@media (min-width: 567px) {
+  header .header__menu {
+    display: none; }
+  header .header__logo {
+    display: block;
+    padding: 2px;
+    margin-top: 5px;
+    letter-spacing: 5px;
+    color: #000;
+    text-shadow: 2px 2px #fff;
+    font-weight: 900; } }
+
+footer {
+  font-family: "Open Sans", sans-serif; }
+  footer .navegacion {
+    text-align: center; }
+    footer .navegacion .navegacion__ul li {
+      list-style: none;
+      padding: 5px; }
+    footer .navegacion .navegacion__ul a {
+      text-decoration: none;
+      font-size: 15px;
+      color: #000;
+      letter-spacing: 2px; }
+  footer p {
+    font-size: 10px;
+    padding: 10px;
+    color: #000;
+    letter-spacing: 2px; }
+  footer a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    font-size: 20px; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(../../Multimedia/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  body .carrusel .car__text {
+    text-shadow: 1px 1px #3f3e3e;
+    font-weight: bold; }
+  body .carrusel .car__caption {
+    top: 5%; }
+  body .carrusel img {
+    border: 5px solid #fff; }
+  body .presentacion .presentacion__tit {
+    color: #000;
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold; }
+  body .productos .prod__cont {
+    padding: 5px; }
+  body .productos a {
+    text-decoration: none;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px; }
+    body .productos a:hover {
+      background-color: #97BFB4;
+      color: #fff;
+      transition: 2s;
+      border-radius: 15%; }
+  body .productos img {
+    width: 45%;
+    border: solid 5px #fff; }
+
+@media (min-width: 567px) {
+  body .productos img {
+    width: 100vw; }
+  body .carrusel .car__text {
+    font-size: 35px;
+    font-weight: 500; } }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(../../Multimedia/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  body .historia__tit {
+    color: #000;
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold; }
+  body img {
+    padding: 15px;
+    margin: 10px; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(../../Multimedia/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  body .articulos__tit {
+    color: #000;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold; }
+  body .card__estilo {
+    background-color: #4e4a4a;
+    color: #fff;
+    opacity: .8; }
+  body img {
+    padding: 0;
+    margin: 0; }
+  body p {
+    font-size: 18px; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(../../Multimedia/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  body .estudio img {
+    padding: 10px;
+    margin: 10px; }
+  body .boton {
+    background-color: #4e4a4a;
+    color: #fff;
+    border: solid 1px black; }
+    body .boton:hover {
+      background-color: #97BFB4;
+      border: solid 2px black; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(../../Multimedia/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #F5EEDC; }
+  body .ubicacion__titulo, body .contacto__titulo {
+    color: #000;
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    margin: 10px; }
+  body .ubicacion__mapa {
+    height: 50vh; }
+  body label {
+    color: black;
+    font-size: 15px; }

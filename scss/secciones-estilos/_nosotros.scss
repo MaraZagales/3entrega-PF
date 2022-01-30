@@ -1,0 +1,28 @@
+body {
+    font-family: $tipografia;
+    background-image: url(../../Multimedia/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .historia__tit {
+        @include titulosImp (22px)
+    }
+
+    .historia__texto {
+        @extend %estilosParrafo;
+    }
+
+    img {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .mision__tit {
+        @extend %estilosTitulo;
+    }
+
+    .mision__texto {
+        @extend %estilosParrafo;
+    }
+}

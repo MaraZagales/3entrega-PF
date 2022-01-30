@@ -1,0 +1,15 @@
+$textoResaltado: (
+    estud: #042c21,
+    privados: #042c21,
+    comerciales: #042c21,
+
+);
+
+@each $frases, $color in $textoResaltado {
+    .#{$frases}{
+        color: $color;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+    

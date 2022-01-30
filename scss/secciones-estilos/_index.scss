@@ -1,0 +1,90 @@
+body {
+
+    font-family: $tipografia;
+    background-image: url(../../Multimedia/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .carrusel {
+
+        .car__text {
+            text-shadow: 1px 1px rgb(63, 62, 62);
+            font-weight: bold;
+        }
+
+        .car__caption {
+            top: 5%;
+        }
+
+        img {
+            border: 5px solid #fff;
+        }
+
+    }
+
+    .presentacion {
+
+        .presentacion__tit {
+            @include titulosImp (22px)
+        }
+
+        .presentacion__p {
+            @extend %estilosParrafo;
+
+        }
+
+
+    }
+
+    .productos {
+        .prod__tit {
+            @extend %estilosTitulo;
+        }
+
+        .prod__cont {
+            padding: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $colorTexto;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+
+            &:hover {
+                background-color: $colorHover;
+                color: #fff;
+                transition: 2s;
+                border-radius: 15%;
+            }
+        }
+
+        img {
+            width: 45%;
+            border: solid 5px #fff;
+
+        }
+
+    }
+}
+
+@media (min-width: 567px) {
+    body {
+        .productos {
+            img {
+                width: 100vw;
+            }
+        }
+
+        .carrusel {
+
+            .car__text {
+                font-size: 35px;
+                font-weight: 500;
+            }
+        }
+    }
+}

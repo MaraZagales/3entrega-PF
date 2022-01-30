@@ -1,0 +1,39 @@
+footer {
+    font-family: $tipografia;
+   
+
+    .navegacion {
+        text-align: center;
+
+        .navegacion__ul {
+            li{
+                list-style: none;
+                padding: 5px;
+            }
+            
+            a {
+                text-decoration: none;
+                font-size: 15px;
+                color: $colorTexto;
+                letter-spacing: 2px;
+
+            }
+        }
+
+    }
+
+    p {
+        font-size: 10px;
+        padding: 10px;
+        color: $colorTexto;
+        letter-spacing: 2px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $colorTexto;
+        padding: 10px;
+        font-size: 20px;
+        
+    }
+}

@@ -1,0 +1,14 @@
+@mixin titulosImp ($tamanio) {
+    color: $colorTexto;
+    font-size: $tamanio;
+    letter-spacing: 2px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold; 
+}
+
+@mixin cards {
+    background-color: $colorCards;
+    color: #fff;
+    opacity: .8;
+}

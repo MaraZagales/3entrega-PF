@@ -1,0 +1,31 @@
+body {
+    font-family: $tipografia;
+    background-image: url(../../Multimedia/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .estudio {
+        img {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        p {
+            @extend %estilosParrafo;
+        }
+
+    }
+
+    .boton {
+        background-color: $colorBoton;
+        color: #fff;
+        border: solid 1px black;
+
+        &:hover {
+            background-color: $colorHover;
+            border: solid 2px black;
+        }
+
+    }
+}

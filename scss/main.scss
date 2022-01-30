@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+//Variables
+@import './variables/colores';
+@import './variables/fuentes';
+
+//Extend
+@import './utilidades/extend';
+//Maps+Each
+@import './utilidades/maps';
+//Mixins
+@import './utilidades/mixins';
+
+//Particiones
+@import './secciones-estilos/header';
+@import './secciones-estilos/footer';
+@import './secciones-estilos/index';
+@import './secciones-estilos/nosotros';
+@import './secciones-estilos/productos';
+@import './secciones-estilos/estudio';
+@import './secciones-estilos/contacto';

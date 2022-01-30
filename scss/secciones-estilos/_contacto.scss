@@ -1,0 +1,23 @@
+body {
+    font-family: $tipografia;  background-image: url(../../Multimedia/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;background-color: #F5EEDC;
+
+    .ubicacion__titulo, .contacto__titulo{
+        @include titulosImp (22px);
+        margin: 10px;
+
+    }
+    .ubicacion__mapa {
+        height: 50vh;
+    }
+    p{
+        @extend %estilosParrafo;
+    }
+    label{
+            color: black;
+            font-size: 15px;
+        }
+    
+}
