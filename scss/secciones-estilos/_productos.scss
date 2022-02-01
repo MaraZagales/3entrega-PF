@@ -1,9 +1,6 @@
 body {
     font-family: $tipografia;
-    background-image: url(../../Multimedia/fondo1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    @extend %estilosFondo;
 
     .articulos__tit {
         @include titulosImp (20px)
