@@ -44,20 +44,34 @@ header {
     color: #000;
     text-shadow: 2px 2px #fff;
     font-weight: bold; }
+  header .header__nav a {
+    text-decoration: none;
+    color: #000; }
+    header .header__nav a:hover {
+      color: #97BFB4; }
+  header .header__nav .header__active {
+    font-weight: bold;
+    text-shadow: 1px 1px #fff; }
   header .header__boton {
     width: 4vw; }
+    header .header__boton i {
+      font-size: 20px;
+      text-align: justify;
+      margin-top: 5px; }
 
 @media (min-width: 567px) {
   header .header__menu {
     display: none; }
-  header .header__logo {
-    display: block;
-    padding: 2px;
-    margin-top: 5px;
-    letter-spacing: 5px;
-    color: #000;
-    text-shadow: 2px 2px #fff;
-    font-weight: 900; } }
+  header a {
+    text-decoration: none; }
+    header a .header__logo {
+      display: block;
+      padding: 2px;
+      margin-top: 5px;
+      letter-spacing: 5px;
+      color: #000;
+      text-shadow: 2px 2px #fff;
+      font-weight: 900; } }
 
 footer {
   font-family: "Open Sans", sans-serif; }
