@@ -5,9 +5,12 @@ body {
     .articulos__tit {
         @include titulosImp (20px)
     }
-    .card__estilo{
-        @include cards
-    }
+    
+        .card__estilo{
+            @include cards;
+            
+        }
+    
     img{
         padding: 0;
         margin: 0;
