@@ -4,11 +4,11 @@
   padding: 0;
   box-sizing: border-box; }
 
-body .presentacion .presentacion__p, body .historia__texto, body .mision__texto, body .estudio p, body p {
+body .presentacion .presentacion__p, body .historia .historia__texto, body .mision .mision__texto, body .estudio p, body p {
   font-size: 15px;
   line-height: 1.5; }
 
-body .productos .prod__tit, body .mision__tit {
+body .productos .prod__tit, body .mision .mision__tit {
   margin: 10px;
   font-size: 20px;
   border-bottom: solid 1px #000; }
@@ -146,16 +146,43 @@ body {
 
 body {
   font-family: "Open Sans", sans-serif; }
-  body .historia__tit {
-    color: #000;
-    font-size: 22px;
-    letter-spacing: 2px;
-    padding: 5px;
-    margin: 5px;
-    font-weight: bold; }
-  body img {
-    padding: 15px;
-    margin: 10px; }
+  body .historia {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; }
+    body .historia .historia__tit {
+      color: #000;
+      font-size: 22px;
+      letter-spacing: 2px;
+      padding: 5px;
+      margin: 5px;
+      font-weight: bold; }
+    body .historia .historia__texto {
+      margin: 30px;
+      text-align: justify; }
+    body .historia img {
+      width: 70%;
+      border: solid 5px #fff;
+      margin: 30px; }
+  body .mision {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    body .mision .mision__tit {
+      margin: 30px; }
+    body .mision .mision__texto {
+      margin: 30px;
+      padding: 10px;
+      text-align: justify; }
+
+@media (min-width: 567px) {
+  body .mision {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+    body .mision div {
+      width: 50%; } }
 
 body {
   font-family: "Open Sans", sans-serif; }

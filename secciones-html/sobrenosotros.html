@@ -26,10 +26,12 @@
 
 <body>
 
-    <div class="container-fluid">
-        <!-- Logo -->
+    <!-- Logo -->
+    <div class="container">
         <header class="row">
-            <a href="../index.html"><h1 class="col-12 text-center header__logo">TEKA LIVINGS</h1></a>
+            <a href="../index.html">
+                <h1 class="col-12 text-center header__logo">TEKA LIVINGS</h1>
+            </a>
             <!-- Barra de navegacion -->
             <nav class="navbar navbar-expand-md col-12">
                 <div class="container-fluid">
@@ -60,53 +62,55 @@
                     </div>
             </nav>
         </header>
-        <main class="container">
-            <article class="row historia">
-                <h2 class="col-12 historia__tit">Historia de Teka</h2>
-                <p class="col-12 historia__texto">Teka es una empresa que comienza su actividad en 2018 con un
-                    importante crecimiento en
-                    el rubro del
-                    diseño, fabricación y comercialización de muebles para el hogar.
-                    Contamos con un equipo altamente comprometido, capacitado y profesional que garantiza la atención
-                    oportuna, la eficiencia en todas nuestras operaciones y la calidad de productos en conformidad con
-                    la expectativa de nuestros clientes. En Teka se transforma la estética convencional de los muebles,
-                    obteniendo como resultado, productos
-                    de diseño exclusivos de gran impacto en el mercado.
+    </div>
+    <main>
+        <article class=" historia">
+            <h2 class="historia__tit">Historia de Teka</h2>
+            <p class="historia__texto">Teka es una empresa que comienza su actividad en 2018 con un
+                importante crecimiento en
+                el rubro del
+                diseño, fabricación y comercialización de muebles para el hogar.
+                Contamos con un equipo altamente comprometido, capacitado y profesional que garantiza la atención
+                oportuna, la eficiencia en todas nuestras operaciones y la calidad de productos en conformidad con
+                la expectativa de nuestros clientes. En Teka se transforma la estética convencional de los muebles,
+                obteniendo como resultado, productos
+                de diseño exclusivos de gran impacto en el mercado.
+            </p>
+            <img src="../Multimedia/estudio.jpg" alt="sillon con mesa ratona" class="historia__img">
+            <p class="historia__texto">
+                El principal objetivo de Teka es ofrecer un amplio surtido de productos, funcionales, de buen diseño
+                y a precios que resulten económicos para la mayoría de las personas.
+                Queremos mejorar el día a día de todos nuestro clientes que reciben la influencia de nuestro negocio
+                facilitando todo lo necesario para el amoblamiento de su hogar.
+            </p>
+        </article>
+        <section class="mision">
+            <div>
+                <h3 class="mision__tit">Misión <i class="fas fa-check-circle"></i></h3>
+                <p class="mision__texto">
+                    Ofrecer a nuestros clientes muebles y elementos auxiliares de máxima calidad, poniendo a su
+                    disposición
+                    los medios tecnológicos más avanzados e innovadores, así como los equipos humanos más
+                    cualificados
+                    para
+                    satisfacer sus necesidades, adaptándonos con máxima rapidez a las tendencias del mercado.
                 </p>
-                <img src="../Multimedia/estudio.jpg" alt="sillon con mesa ratona" class="img-fluid img-thumbnail">
-                <p class="col-12 historia__texto">
-                    El principal objetivo de Teka es ofrecer un amplio surtido de productos, funcionales, de buen diseño
-                    y a precios que resulten económicos para la mayoría de las personas.
-                    Queremos mejorar el día a día de todos nuestro clientes que reciben la influencia de nuestro negocio
-                    facilitando todo lo necesario para el amoblamiento de su hogar.
+            </div>
+            <div>
+                <h3 class="mision__tit">Visión <i class="far fa-lightbulb"></i></h3>
+                <p class="mision__texto">
+                    Ser empresa líder en la comercialización de muebles de todos los estilos en nuestro país de
+                    origen,
+                    Argentina. Queremos ser referentes de calidad total, con generación de valor para proveedores,
+                    clientes
+                    y
+                    empleados.
                 </p>
-            </article>
-            <section class="row mision">
-                <div class="col-sm-12 col-md-6">
-                    <h3 class="mision__tit">Misión <i class="fas fa-check-circle"></i></h3>
-                    <p class="mision__texto">
-                        Ofrecer a nuestros clientes muebles y elementos auxiliares de máxima calidad, poniendo a su
-                        disposición
-                        los medios tecnológicos más avanzados e innovadores, así como los equipos humanos más
-                        cualificados
-                        para
-                        satisfacer sus necesidades, adaptándonos con máxima rapidez a las tendencias del mercado.
-                    </p>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <h3 class="mision__tit">Visión <i class="far fa-lightbulb"></i></h3>
-                    <p class="mision__texto">
-                        Ser empresa líder en la comercialización de muebles de todos los estilos en nuestro país de
-                        origen,
-                        Argentina. Queremos ser referentes de calidad total, con generación de valor para proveedores,
-                        clientes
-                        y
-                        empleados.
-                    </p>
-                </div>
-            </section>
-        </main>
-        <!-- Footer -->
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <div class="container">
         <footer class="row mt-5">
             <div class="col-sm-12 col-md-4 text-center">
                 <i class="fas fa-store"></i>
@@ -138,8 +142,8 @@
                         class="fab fa-facebook-square"></i></a>
             </div>
         </footer>
-
     </div>
+
     <!-- AOS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

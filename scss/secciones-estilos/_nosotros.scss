@@ -2,24 +2,64 @@ body {
     font-family: $tipografia;
     @extend %estilosFondo;
 
-    .historia__tit {
-        @include titulosImp (22px)
+    .historia {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .historia__tit {
+            @include titulosImp (22px);
+
+        }
+
+        .historia__texto {
+            @extend %estilosParrafo;
+            margin: 30px;
+            text-align: justify;
+        }
+
+        img {
+
+            width: 70%;
+            border: solid 5px #fff;
+            margin: 30px;
+        }
     }
 
-    .historia__texto {
-        @extend %estilosParrafo;
+    .mision {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        .mision__tit {
+            @extend %estilosTitulo;
+            margin: 30px;
+
+        }
+
+        .mision__texto {
+            @extend %estilosParrafo;
+            margin: 30px;
+            padding: 10px;
+            text-align: justify;
+
+        }
     }
 
-    img {
-        padding: 15px;
-        margin: 10px;
-    }
+}
 
-    .mision__tit {
-        @extend %estilosTitulo;
-    }
+@media (min-width: 567px) {
+    body {
+        .mision {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
 
-    .mision__texto {
-        @extend %estilosParrafo;
+            div {
+                width: 50%;
+            }
+
+        }
     }
 }
