@@ -14,8 +14,13 @@ body {
             top: 5%;
         }
 
-        img {
+        .car__img {
             border: 5px solid #fff;
+            width: 100%;
+            
+        }
+        .car__boton{
+            width: 30%
         }
 
     }
@@ -24,10 +29,12 @@ body {
 
         .presentacion__tit {
             @include titulosImp (22px)
+        
         }
 
         .presentacion__p {
             @extend %estilosParrafo;
+
 
         }
 
@@ -54,7 +61,6 @@ body {
             &:hover {
                 background-color: $colorHover;
                 color: #fff;
-                transition: 2s;
                 border-radius: 15%;
             }
         }
@@ -77,11 +83,19 @@ body {
         }
 
         .carrusel {
-
             .car__text {
-                font-size: 35px;
+                font-size: 25px;
                 font-weight: 500;
             }
+
+            .car__img{
+                width: 60%;
+                margin: 0 auto;
+            }
+            .car__boton{
+                width: 50%;
+            }
+
         }
     }
 }
