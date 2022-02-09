@@ -177,6 +177,8 @@ body {
       text-align: justify; }
 
 @media (min-width: 567px) {
+  body .historia .historia__texto {
+    margin: 50px; }
   body .mision {
     display: flex;
     flex-direction: row;
@@ -205,16 +207,77 @@ body {
 
 body {
   font-family: "Open Sans", sans-serif; }
-  body .estudio img {
-    padding: 10px;
-    margin: 10px; }
+  body .estudio__titulo {
+    color: #000;
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center; }
+  body .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    width: 80%;
+    margin: 2rem auto; }
+    body .grid .grid__container__img {
+      width: 100%;
+      border: solid 3px #fff; }
+      body .grid .grid__container__img:hover {
+        opacity: 1; }
+    body .grid .overlay {
+      height: 100%;
+      background-color: #97BFB4;
+      opacity: 0;
+      transform: translate(0%, -100%);
+      transition: .5s ease;
+      z-index: 1;
+      position: relative; }
+      body .grid .overlay:hover {
+        opacity: 1; }
+      body .grid .overlay .overlay__title {
+        color: #fff;
+        font-size: 1rem;
+        margin: 10px;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%); }
+  body .estudio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .estudio p {
+      margin: 40px;
+      text-align: justify; }
   body .boton {
     background-color: #4e4a4a;
-    color: #fff;
     border: solid 1px black; }
     body .boton:hover {
       background-color: #97BFB4;
       border: solid 2px black; }
+    body .boton a {
+      text-decoration: none;
+      color: #fff; }
+
+@media (min-width: 567px) {
+  body .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 60%; }
+    body .grid .grid__container__img {
+      border: solid 5px #fff; }
+    body .grid .overlay .overlay__title {
+      font-size: 1.5rem;
+      top: 45%;
+      left: 45%; }
+  body .estudio p {
+    margin: 50px;
+    padding: 20px; } }
 
 body {
   font-family: "Open Sans", sans-serif; }

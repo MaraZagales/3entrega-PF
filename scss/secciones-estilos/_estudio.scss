@@ -2,27 +2,118 @@ body {
     font-family: $tipografia;
     @extend %estilosFondo;
 
-    .estudio {
-        img {
-            padding: 10px;
-            margin: 10px;
+    .estudio__titulo {
+        @include titulosImp (22px);
+        margin: 20px;
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1.5rem;
+        width: 80%;
+        margin: 2rem auto;
+
+        .grid__container__img {
+            width: 100%;
+            border: solid 3px #fff;
+
+            &:hover {
+                opacity: 1
+            }
         }
+
+        .overlay {
+            height: 100%;
+            background-color: $colorHover;
+            opacity: 0;
+            transform: translate(0%, -100%);
+            transition: .5s ease;
+            z-index: 1;
+            position: relative;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            .overlay__title {
+                color: #fff;
+                font-size: 1rem;
+                margin: 10px;
+                text-align: center;
+                position: absolute;
+                top: 40%;
+                left: 40%;
+                transform: translate(-50%, -50%);
+            }
+
+        }
+
+
+    }
+
+
+    .estudio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         p {
             @extend %estilosParrafo;
+            margin: 40px;
+            text-align: justify;
         }
-
     }
 
     .boton {
         background-color: $colorBoton;
-        color: #fff;
         border: solid 1px black;
+
 
         &:hover {
             background-color: $colorHover;
             border: solid 2px black;
         }
 
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+
     }
+}
+
+@media (min-width: 567px) {
+    body {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            width: 60%;
+
+            .grid__container__img {
+                border: solid 5px #fff;
+            }
+
+            .overlay {
+                .overlay__title {
+                    font-size: 1.5rem;
+                    top: 45%;
+                    left: 45%;
+                }
+            }
+
+        }
+
+        .estudio {
+
+            p {
+                margin: 50px;
+                padding: 20px;
+            }
+        }
+    }
+
 }

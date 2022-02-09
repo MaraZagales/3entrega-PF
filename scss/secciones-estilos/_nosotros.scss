@@ -51,6 +51,11 @@ body {
 
 @media (min-width: 567px) {
     body {
+        .historia{
+            .historia__texto{
+                margin: 50px;
+            }
+        }
         .mision {
             display: flex;
             flex-direction: row;
