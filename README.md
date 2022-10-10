@@ -1,5 +1,5 @@
 # Proyecto Final Teka
 
-Curso de Desarrollo Web para CoderHouse
+Curso de Desarrollo Web - CoderHouse
 
 Se utilizaron tecnologias como Bootstrap para añadir componentes y funcionalidad a la pagina, AOS Library para darle efecto a imagenes y Sass para los estilos.
